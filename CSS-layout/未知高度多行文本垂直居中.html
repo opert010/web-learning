@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.mask {
+			position: fixed;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			text-align: center;
+			background-color: rgba(200,200,200,.2);
+		}
+
+		.mask:after {
+			content:" ";
+			display:inline-block;
+			vertical-align: middle;
+			overflow: hidden;
+			height: 100%;
+		}
+
+		.dialog {
+			display: inline-block;
+			border:3px solid lightblue;
+		}
+	</style>
+</head>
+<body>
+	<div class="mask">
+		<div class="dialog">
+		未知宽高元素窗口水平垂直居中(拖动右下角改变宽高)"
+
+		</div>
+	</div>
+</body>
+</html>
